@@ -24,4 +24,4 @@ deploy:
   provide: script
   script: bash ./deploy.sh
   on:
-    branch: master
+    branch: main
