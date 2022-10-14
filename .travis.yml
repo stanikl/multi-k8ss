@@ -14,7 +14,7 @@ before_install:
   - gcloud config set project multi-k8s-362816
   - gcloud config set compute/zone europe-west4-c
   - gcloud container clusters get-credentials multi-cluster
-  - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+  - docker login docker.io -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
   - docker build -t stanikl/react-test -f ./client/Dockerfile.dev ./client
 
 script:
